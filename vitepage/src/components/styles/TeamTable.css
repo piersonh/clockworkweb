@@ -1,0 +1,84 @@
+.team-table-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 32px;
+}
+
+.team-header {
+    margin-bottom: 32px;
+    color: var(--text);
+    align-self: center;
+    transition: all 0.3s ease;
+}
+
+.team-member-group {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap; 
+    color: var(--text);
+}
+
+.team-advisor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    color: var(--text);
+    font-weight: bold;
+}
+
+.team-advisor-pfp-container {
+    width: 152px;
+    height: 152px;
+    margin: 32px 0 24px 0;
+    border-radius: 50%;
+    border: 2px solid var(--text);
+    overflow: hidden;
+    perspective: 800px;
+}
+
+.team-advisor-flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+}
+
+.team-advisor-flipper.flipped {
+    transform: rotateY(180deg);
+}
+
+.team-advisor-face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+}
+
+
+.team-advisor-face img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.team-advisor-face.back {
+    transform: rotateY(180deg);
+}
+
+.team-advisor-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+}
+

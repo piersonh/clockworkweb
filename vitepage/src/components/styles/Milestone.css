@@ -1,0 +1,30 @@
+.milestone-container {
+    width: 100%;
+    min-height: 100%;
+    margin-top: 32px;
+    border-radius: 5px;
+}
+
+.milestone-title {
+    padding-top: 32px;
+}
+
+.milestone-content {
+    display: flex;
+    height: 100%;
+}
+
+.milestone-docs {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+}
+
+.milestone-left {
+    width: 65%;
+}
+
+.milestone-right {
+    width: 35%;
+    max-height: fit-content;
+}

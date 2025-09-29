@@ -1,0 +1,38 @@
+.team-member {
+    position: relative;
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70px;
+    height: auto;
+    background-color: color-mix(in srgb, var(--background) 50%, transparent);
+}
+
+.team-member-name {
+    width: 50%;
+    margin-bottom: 24px;
+}
+
+.team-member-pfp {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-member a, .team-advisor a {
+    color: var(--accent);
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+}
+
+.team-member a:hover, .team-advisor a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+.App-container {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.App-container::-webkit-scrollbar {
+  display: none;
+}
+
+.App-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.App-background::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(var(--background));
+  transition: background-color 0.3s ease;
+}
+
+.App-background-diagonal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(var(--background));
+  opacity: 0.5;
+  background-image: radial-gradient(
+    var(--secondary) 0.5px, 
+    var(--background) 0.5px
+  );
+  background-size: 10px 10px;
+  transition: background-color 0.3s ease,
+              background-image 0.3s ease,
+}
+
+.App-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.App-sub-container {
+  width: 100%;
+}
+
+

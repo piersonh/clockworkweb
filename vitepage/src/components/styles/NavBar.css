@@ -1,0 +1,50 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--background); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+#mode-toggle {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--background-alt);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 24px;
+    transition: all 0.3s ease;
+}
+
+#mode-toggle:hover {
+    cursor: pointer;
+    background-color: var(--background);
+}
+
+#mode-toggle:active {
+    transform: scale(0.95);
+}
+

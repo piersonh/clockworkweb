@@ -1,0 +1,62 @@
+:root {
+  --text: rgba(1, 0, 10);               /* #01000a */
+  --text-light: rgba(246, 245, 255);    /* #f6f5ff */
+  --background: rgba(247, 247, 247);    /* #f7f7f7 */
+  --background-alt: rgb(232, 232, 232); /* #f0f0f0 */
+  --primary: rgba(119, 0, 255);         /* #7700ff */
+  --secondary: rgba(129, 56, 255);      /* #8138ff */
+  --accent: rgba(98, 209, 139);         /* #62d18b */
+}
+
+.dark-mode {
+  --text: rgba(246, 245, 255);          /* #f6f5ff */
+  --background: rgba(33, 33, 33);       /* #212121 */
+  --background-alt: rgba(54, 54, 54);   /* #363636 */
+  --primary: rgba(119, 0, 255);         /* #7700ff */
+  --secondary: rgba(73, 0, 199);        /* #4900c7 */
+  --accent: rgba(98, 209, 139);         /* #62d18b */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html { font-size: 16px; }
+
+p  { font-size: 1rem;     line-height: 150%; letter-spacing: -0.5%; margin: 0; }
+h6 { font-size: 1.25rem;  line-height: 150%; letter-spacing: -0.5%; margin: 0; }
+h5 { font-size: 1.563rem; line-height: 150%; letter-spacing: -0.5%; margin: 0; }
+h4 { font-size: 1.953rem; line-height: 130%; letter-spacing: -1.5%; margin: 0; }
+h3 { font-size: 2.441rem; line-height: 130%; letter-spacing: -1.5%; margin: 0; }
+h2 { font-size: 3.052rem; line-height: 110%; letter-spacing: -2%;   margin: 0; }
+h1 { font-size: 3.815rem; line-height: 110%; letter-spacing: -2%;   margin: 0; }
+
+body {
+  font-family: 'General Sans', sans-serif;
+  line-height: 150%; 
+  letter-spacing: -0.5%;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  background-color: color-mix(in srgb, var(--background-alt) 50%, transparent);
+  border-radius: 10px;
+  padding: 32px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 2px inset;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.small-spacer {
+  height: 52px;
+  width: 100%;
+}
+
+.big-spacer {
+  height: 240px;
+  width: 100%;
+}
