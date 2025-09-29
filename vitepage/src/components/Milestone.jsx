@@ -115,7 +115,7 @@ const Milestone = ({ id }) => {
                             ) 
                         }
                         docName="Presentation" 
-                        coverImage="/documents/presentation2.png"
+                        coverImage="/clockworkweb/documents/presentation2.png"
                     />
                     <h4 style={{margin: '8px 0 24px 0'}}>Presentation</h4>
 

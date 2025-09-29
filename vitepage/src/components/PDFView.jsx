@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './styles/PDFView.css';
 
 const openDocument = (fileName) => {
-  window.open(`/documents/${fileName}`, '_blank');
+  window.open(`/clockworkweb/documents/${fileName}`, '_blank');
 };
 
 const PDFView = ({ fileName, docName, coverImage }) => {
