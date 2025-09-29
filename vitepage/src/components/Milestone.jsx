@@ -70,7 +70,11 @@ const Milestone = ({ id }) => {
             case 3: // Milestone 3
                 return null;
             case 4: // Sem Plan 2
-                return null;
+                return (
+                    <div className='milestone-docs'>
+                        <PDFView fileName="plan2.pdf" docName="Plan Document" />
+                    </div>
+                );
             case 5: // Milestone 4
                 return null;
             case 6: // Milestone 5
