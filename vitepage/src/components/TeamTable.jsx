@@ -23,10 +23,10 @@ const TeamTable = () => {
                 >
                     <div className={`team-advisor-flipper ${goatLugin ? "flipped" : ""}`}>
                         <div className="team-advisor-face front" >
-                            <img src="/dr-L.jpg" alt="Dr. Lugin" />
+                            <img src="/clockworkweb/dr-L.jpg" alt="Dr. Lugin" />
                         </div>
                         <div className="team-advisor-face back" >
-                            <img src="/goat.jpg" alt="Goat Lugin" />
+                            <img src="/clockworkweb/goat.jpg" alt="Goat Lugin" />
                         </div>
                     </div>
                 </div>

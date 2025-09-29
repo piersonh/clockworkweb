@@ -3,7 +3,7 @@ import './styles/TeamMember.css';
 const TeamMember = ({ name, email }) => {
     return (
         <div className='container team-member'>
-            <img className="team-member-pfp" src="/profile-default-svgrepo-com.svg" alt="Profile Picture" />
+            <img className="team-member-pfp" src="/clockworkweb/profile-default-svgrepo-com.svg" alt="Profile Picture" />
             <div className='team-member-name'> 
                 <h4>{name}</h4> 
             </div>
