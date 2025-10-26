@@ -8,16 +8,22 @@ const openDocument = (fileName) => {
 const PDFView = ({ fileName, docName, coverImage }) => {
   console.log(fileName);
   
+  const docClass = () => {
+    if (docName === "Presentation") {
+      return "pdf-viewer pdf-viewer-video";
+    } else if (docName === "Poster") {
+      return "pdf-viewer pdf-viewer-doc pdf-viewer-poster";
+    } else {
+      return "pdf-viewer pdf-viewer-doc";
+    }
+  }
+
   const [isHovered, setIsHovered] = useState(false);
   const titleSplit = docName.split(' ');
 
   return (
     <div
-      className={
-        docName === "Presentation" ? 
-        "pdf-viewer pdf-viewer-video" : 
-        "pdf-viewer pdf-viewer-doc"
-      }
+      className={docClass()}
       onClick={() => openDocument(fileName)}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

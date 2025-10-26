@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './styles/Timeline.css';
 
 const Timeline = () => {
-    const [activeMilestone, setActiveMilestone] = useState(5); //set as the most recent milestone for default
+    const [activeMilestone, setActiveMilestone] = useState(6); //set as the most recent milestone for default
 
     const milestones = [
         "Sem Plan 1", 

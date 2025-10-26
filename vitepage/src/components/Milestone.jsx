@@ -41,9 +41,11 @@ const Milestone = ({ id }) => {
                 obj.report = "4"; 
                 return obj; 
             case 6: // Milestone 5
+                obj.video = "1Ce0yswCSZUUlDexAvNNaBTpSexRb_jwb";
                 obj.report = "5"; 
                 return obj; 
             case 7: // Milestone 6
+                obj.video = "1Ce0yswCSZUUlDexAvNNaBTpSexRb_jwb";
                 obj.report = "6"; 
                 return obj; 
             default: 
@@ -80,12 +82,23 @@ const Milestone = ({ id }) => {
                 return null;
             case 6: // Milestone 5
                 return (
-                    <div className='milestone-docs'>
-                        <PDFView fileName="poster.pdf" docName="Poster" />
+                    <div>
+                        <div className='milestone-docs'>
+                            <PDFView fileName="poster.pdf" docName="Poster" />
+                        </div>
+                        <h4 style={{margin: '8px 0 24px 0'}}>Showcase Poster</h4>
                     </div>
                 );
             case 7: // Milestone 6
-                return;
+                return (
+                    <div>
+                        <div className='milestone-docs'>
+                            <PDFView fileName="user_manual.pdf" docName="User Manual" />
+                            <PDFView fileName="dev_manual.pdf" docName="Developer Manual" />
+                        </div>
+                        <h4 style={{margin: '8px 0 24px 0'}}>Manuals</h4>
+                    </div>
+                );
             default:
                 return;
         }

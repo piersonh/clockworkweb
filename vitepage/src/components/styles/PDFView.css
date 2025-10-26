@@ -25,6 +25,10 @@
     aspect-ratio: 8.5 / 11;
 }
 
+.pdf-viewer-poster {
+    aspect-ratio: 11 / 8.5;
+}
+
 .pdf-viewer-doc h5 {
     line-height: 130%;
     color: #01000a;
