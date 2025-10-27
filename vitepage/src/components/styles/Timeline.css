@@ -16,11 +16,11 @@
 .timeline-bar {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
-    margin: 32px 0;
+    width: 100%;    
+    margin: 16px 0;
 }
 
 .timeline-bar::before {
@@ -39,6 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1 1 auto;
     z-index: 2;
 }
 
@@ -46,25 +47,33 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex: 1;
+    flex-shrink: 1;
     gap: 12px;
     color: var(--text-light);
-    padding: 16px 24px;
-    height: 40px;
-    margin: 0 8px;
+    padding: clamp(8px, 1.5vw, 16px) clamp(12px, 1.5vw, 24px);
     background: linear-gradient(45deg, var(--primary), var(--secondary) 100%);
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+.timeline-milestone h2 {
+    font-size: clamp(1rem, 4vw, 3.052rem);
+    line-height: 1.1;
+    margin: 0;
+    white-space: nowrap; /* prevents forced new lines */
+}
+
+.timeline-milestone h6 {
+    font-size: clamp(0.6rem, 1.5vw, 1.25rem);
+    line-height: 1.1;
+    margin: 0;
+    white-space: nowrap; /* prevents forced new lines */
+}
+
 .timeline-milestone:nth-child(4n+1) { /* Hits the Sem 1 and Sem 2 boxes */
     color: var(--primary);
     background: var(--text-light);
-}
-
-.timeline-milestone:not(:nth-child(1)):not(:nth-child(5)) {
-    height: 30px;
 }
 
 .timeline-milestone:hover {
@@ -90,6 +99,7 @@
 }
 
 .timeline-date {
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
     transition: all 0.3s ease;
 }
 

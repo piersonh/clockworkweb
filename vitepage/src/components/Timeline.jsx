@@ -32,12 +32,11 @@ const Timeline = () => {
             <h2 className='timeline-header'>Project <span className='text-gradient'>Timeline</span> </h2>
             <div className="timeline-bar">
                 {milestones.map((milestone, i) => (
-                    <div className='timeline-segment'>
+                    <div className='timeline-segment' key={i}>
                         <div className={`timeline-date ${activeMilestone === i ? "active" : ""}`}>
                             {dates[i]}
                         </div>
                         <div
-                            key={i}
                             className={`timeline-milestone ${activeMilestone === i ? "active" : ""}`}
                             onClick={() => {
                                 setActiveMilestone(i);
